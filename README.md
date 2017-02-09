@@ -102,3 +102,7 @@ http://sipp.sourceforge.net/doc/cn-reference.pdf
 >產生的測試帳號一段時間後會被homestead自動清除，  
 >如果發出指令後出現所有註冊都是404 not found的回應，  
 >那就必須重新建立測試帳號(從STEP2的步驟5開始)  
+
+
+###若是途中有重啟sprout 壓力測試掉的封包很多是正常的 需要測個5次以上才會準  
+###sprout需要暖機
