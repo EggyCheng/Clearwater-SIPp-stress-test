@@ -20,7 +20,7 @@ clearwater-management不用裝
 >所以等一下在homestead建帳號的時候 密碼都要改成這個密碼  
 >並且要注意裡面的realm是否跟存在homestead的realm一樣  
 
-#STEP2:
+##STEP2:
 
 此步驟要開始在clearwater的HSS(homestead)存壓力測試的user account  
 
@@ -56,7 +56,7 @@ users.create_xdm.sh
 完成以上步驟，測試帳號即建立完成。  
 
 
-STEP3:
+##STEP3:
 
 *切換至 SIPp host*  
 以下為Sipp的使用流程:
