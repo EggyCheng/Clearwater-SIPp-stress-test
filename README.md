@@ -12,8 +12,8 @@ Stress test with Clearwater project.
 
 將其中Install Node-Specific Software階段的指令改為
     #sudo apt-get install clearwater-sip-stress    
->clearwater-management不用裝
->然後你就安裝好SIPp了  
+clearwater-management不用裝  
+然後你就安裝好SIPp了  
 >此時/usr/share/clearwater/sip-stress/會有2個檔案: sip-stress.xml & users.csv.1     
 
 >這裡可以打開users.csv.1來看 所有帳號的密碼都是7kkzTyGW  
