@@ -24,7 +24,7 @@ clearwater-management不用裝
 
 此步驟要開始在clearwater的HSS(homestead)存壓力測試的user account  
 
-*以下步驟皆在homestead那台虛擬機內完成* 
+*以下步驟皆在homestead host 內完成* 
 
 1.於user目錄執行此指令建立測試帳號  
 
@@ -51,12 +51,14 @@ users.create_xdm.cqlsh
 users.create_xdm.sh  
 五個檔案，將 *users.create_xdm.cqlsh、users.create_xdm.sh*移至 homer的host  
 7.在homestead執行 sh users.create_homestead.sh   
-8.切換至 homer虛擬機，執行 sh users.create_xdm.sh (執行時沒有通知，等回到可以下shell指令就代表完成)  
+*切換至 homer host*  
+8.執行 sh users.create_xdm.sh (執行時沒有通知，等回到可以下shell指令就代表完成)  
 完成以上步驟，測試帳號即建立完成。  
 
 
 STEP3:
 
+*切換至 SIPp host*  
 以下為Sipp的使用流程:
 
 取得腳本:
