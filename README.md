@@ -42,7 +42,8 @@ clearwater-management不用裝
 5.執行bulk_create.py users.csv  
 ```sh
 /usr/share/clearwater/crest/src/metaswitch/crest/tools/bulk_create.py users.csv   
-```  
+``` 
+
 >若需要啟用Application的服務，在
 _initial_filter_xml = ifcs.generate_ifcs(utils.sip_uri_to_domain(public_id))_此行下面加入
 _initial_filter_xml = '(ifc format)'_
