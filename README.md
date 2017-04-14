@@ -92,9 +92,13 @@ http://sipp.sourceforge.net/doc/cn-reference.pdf
 2.	切至super user，否則權限不夠發送封包  
 
 3.	執行SIPp:  
-nice -n-20 /usr/share/clearwater/bin/sipp -i (SIPp's address) -sf ./sip-stress.xml (Bono's address):5060 -t tn -s clearwater -inf ./users.csv.1 -users 2000 -m 2000 -default_behaviors all,-bye -max_socket 65000 -max_reconnect -1 -reconnect_sleep 0 -reconnect_close 0 -send_timeout 4000 -recv_timeout 12000
 
--i 後面的參數表示 自身的IP  
+```sh
+nice -n-20 /usr/share/clearwater/bin/sipp -i <sipp ip> -sf ./sip-stress.xml <bono ip> -t tn -s <clearwater hostname> -inf ./users.csv.1 -users 1000 -m 1000 -default_behaviors all,-bye -max_socket 65000 -max_reconnect -1 -reconnect_sleep 0 -reconnect_close 0 -send_timeout 4000 -recv_timeout 12000
+
+``` 
+> sipp ip,bono ip,clearwater hostname 記得改  
+-i 後面的參數表示 自身的IP  
 -sf 後面的參數為腳本的位置  
 藍字為要發送過去封包的P-CSCF的IP以及port  
 -t 後面參數表示要以tcp還是udp的方式傳送 tn為tcp、un為udp  
