@@ -40,7 +40,9 @@ clearwater-management不用裝
 3.切換至 */usr/share/clearwater/crest/src/metaswitch/crest/tools/*  
 4.修改bulk_autocomplete.py檔, 把這行註解掉row.append(utils.create_secure_human_readable_id(48))並加上row.append("7kkzTyGW")在這行下面  
 5.執行bulk_create.py users.csv  
-/usr/share/clearwater/crest/src/metaswitch/crest/tools/bulk_create.py users.csv    
+```sh
+/usr/share/clearwater/crest/src/metaswitch/crest/tools/bulk_create.py users.csv   
+```  
 >若需要啟用Application的服務，在
 _initial_filter_xml = ifcs.generate_ifcs(utils.sip_uri_to_domain(public_id))_此行下面加入
 _initial_filter_xml = '(ifc format)'_
@@ -54,6 +56,7 @@ users.create_homestead.sh
 users.create_xdm.cqlsh  
 users.create_xdm.sh  
 五個檔案，將 *users.create_xdm.cqlsh、users.create_xdm.sh*移至 homer的host  
+*users.create_homestead_cache.casscli 、users.create_homestead_provisioning.casscli、users.create_homestead.sh*移至 homestead的host  
 7.在homestead執行   
 ```sh
 sh users.create_homestead.sh
