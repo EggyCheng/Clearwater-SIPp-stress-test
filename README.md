@@ -32,11 +32,11 @@ clearwater-management不用裝
 
 >2010000000..2010099999範圍為測試帳號的數量，該指令為100000個測試帳號  
 
+
+2.步驟1將產生一users.csv的檔案，將其丟入 
 ```sh
 /usr/share/clearwater/crest/src/metaswitch/crest/tools/
 ``` 
-
-2.步驟1將產生一users.csv的檔案，將其丟入 */usr/share/clearwater/crest/src/metaswitch/crest/tools/*  
 3.切換至 */usr/share/clearwater/crest/src/metaswitch/crest/tools/*  
 4.修改bulk_autocomplete.py檔, 把這行註解掉row.append(utils.create_secure_human_readable_id(48))並加上row.append("7kkzTyGW")在這行下面  
 5.執行bulk_create.py users.csv  
@@ -54,9 +54,15 @@ users.create_homestead.sh
 users.create_xdm.cqlsh  
 users.create_xdm.sh  
 五個檔案，將 *users.create_xdm.cqlsh、users.create_xdm.sh*移至 homer的host  
-7.在homestead執行 sh users.create_homestead.sh   
+7.在homestead執行   
+```sh
+sh users.create_homestead.sh
+``` 
 *切換至 homer host*  
-8.執行 sh users.create_xdm.sh (執行時沒有通知，等回到可以下shell指令就代表完成)  
+8.執行 (執行時沒有通知，等回到可以下shell指令就代表完成)  
+```sh
+sh users.create_xdm.sh
+```
 完成以上步驟，測試帳號即建立完成。  
 
 
