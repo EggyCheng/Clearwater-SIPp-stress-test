@@ -38,8 +38,13 @@ clearwater-management不用裝
 /usr/share/clearwater/crest/src/metaswitch/crest/tools/
 ``` 
 3.切換至 */usr/share/clearwater/crest/src/metaswitch/crest/tools/*  
-4.修改bulk_autocomplete.py檔, 把這行註解掉row.append(utils.create_secure_human_readable_id(48))並加上row.append("7kkzTyGW")在這行下面  
-5.執行bulk_create.py users.csv  
+4.修改bulk_autocomplete.py檔, 把這行註解掉row.append(utils.create_secure_human_readable_id(48))並加上row.append("7kkzTyGW")在這行下面    
+並執行:    
+```sh
+/usr/share/clearwater/crest/src/metaswitch/crest/tools/bulk_autocomplete.py users.csv    
+cp users.auto.csv users.csv    
+``` 
+5.執行bulk_create.py users.csv  
 ```sh
 /usr/share/clearwater/crest/src/metaswitch/crest/tools/bulk_create.py users.csv   
 ``` 
