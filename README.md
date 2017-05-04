@@ -26,7 +26,7 @@ clearwater-management不用裝
 
 *以下步驟皆在homestead host 內完成* 
 
-1.於user目錄執行此指令建立測試帳號  
+1.於根目錄執行此指令建立測試帳號  
 
 ./etc/clearwater/config; for DN in {2010000000..2010099999} ; do echo sip:$DN@$home_domain ; done > users.csv     
 
